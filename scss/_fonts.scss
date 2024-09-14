@@ -1,0 +1,40 @@
+@font-face {
+	font-family: 'WorkSans';
+	src: url('./assets/fonts/WorkSans-VariableFont_wght.ttf') format('truetype');
+	font-weight: 100 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'WorkSansItalic';
+	src: url('./assets/fonts/WorkSans-Italic-VariableFont_wght.ttf') format('truetype');
+	font-weight: 100 900;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'WorkSansBold';
+	src: url('./assets/fonts/static/WorkSans-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'WorkSansRegular';
+	src: url('./assets/fonts/static/WorkSans-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'WorkSansSemiBold';
+	src: url('./assets/fonts/static/WorkSans-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+$regular: 'WorkSansRegular', sans-serif;
+$bold: 'WorkSansBold', sans-serif;
+$italic: 'WorkSansItalic', sans-serif;
+$semibold: 'WorkSansSemiBold', sans-serif;
+$variable: 'WorkSans', sans-serif;

@@ -1,0 +1,14 @@
+@use './colors' as colors;
+@use './fonts' as fonts;
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #333;
+	color: white;
+	font-family: fonts.$regular;
+}
