@@ -39,7 +39,7 @@ body {
   background-color: #333;
   color: hsl(292, 42%, 14%);
   font-family: "WorkSansRegular", sans-serif;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 main {
@@ -101,10 +101,11 @@ ul li {
 }
 ul li .question-box {
   display: flex;
-  padding: 10px 0 10px 0px;
+  padding: 25px 0 25px 0px;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid rgba(95, 95, 95, 0.151);
+  border-top: 1px solid rgba(95, 95, 95, 0.2);
+  font-weight: 700;
 }
 ul li .question-box span {
   display: flex;
@@ -115,6 +116,16 @@ ul li .question-box span {
 ul li .question-box span svg {
   width: 25px;
   height: 25px;
+}
+ul li .answer-box {
+  padding: 5px;
+}
+ul li .answer-box p {
+  padding: 0 0 25px 0px;
+  font-family: "WorkSansItalic", sans-serif;
+  font-style: italic;
+  font-size: 14px;
+  color: rgba(128, 128, 128, 0.7);
 }
 ul li .first {
   border: none;
