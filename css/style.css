@@ -167,4 +167,7 @@ ul li .first {
   li .question-box {
     font-size: 1.25rem;
   }
+  .content-box ul li .answer-box {
+    font-size: 1.25rem;
+  }
 }/*# sourceMappingURL=style.css.map */
