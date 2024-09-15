@@ -72,6 +72,12 @@ main {
 	}
 }
 
+.cards {
+	max-height: 500px; /* Ustaw maksymalną wysokość kontenera listy */
+	overflow-y: auto; /* Włącz przewijanie w pionie, gdy zawartość przekroczy limit */
+	padding-right: 10px; /* Opcjonalne: Ustawienie odstępu na pasek przewijania */
+}
+
 ul {
 	list-style-type: none;
 

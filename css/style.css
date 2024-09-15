@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "WorkSans";
   src: url("./assets/fonts/WorkSans-VariableFont_wght.ttf") format("truetype");
@@ -90,6 +91,12 @@ main {
   width: 25px;
   height: 25px;
   margin-right: 15px;
+}
+
+.cards {
+  max-height: 500px; /* Ustaw maksymalną wysokość kontenera listy */
+  overflow-y: auto; /* Włącz przewijanie w pionie, gdy zawartość przekroczy limit */
+  padding-right: 10px; /* Opcjonalne: Ustawienie odstępu na pasek przewijania */
 }
 
 ul {
