@@ -113,6 +113,10 @@ ul li .question-box {
   align-items: center;
   border-top: 1px solid rgba(95, 95, 95, 0.2);
   font-weight: 700;
+  cursor: pointer;
+}
+ul li .question-box p {
+  transition: color linear 0.2s;
 }
 ul li .question-box span {
   display: flex;
@@ -138,6 +142,10 @@ ul li .first {
   border: none;
 }
 
+.question-box:hover P {
+  color: hsl(292, 16%, 49%);
+}
+
 @media (min-width: 768px) {
   .content-box {
     width: 600px;
@@ -148,7 +156,7 @@ ul li .first {
     background-size: cover;
   }
   .cards {
-    max-height: 800px; /* Ustaw maksymalną wysokość kontenera listy */
+    max-height: 600px; /* Ustaw maksymalną wysokość kontenera listy */
     overflow-y: auto; /* Włącz przewijanie w pionie, gdy zawartość przekroczy limit */
     padding-right: 10px; /* Opcjonalne: Ustawienie odstępu na pasek przewijania */
   }
