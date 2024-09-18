@@ -39,10 +39,9 @@ main {
 	flex-direction: column;
 	flex-wrap: wrap;
 	width: 300px;
-	// height: 600px;
 	padding: 25px;
 	border-radius: 10px;
-	box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.3); // to fix
+	box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.3);
 	background-color: colors.$White;
 	top: 50%;
 	left: 50%;
@@ -53,9 +52,7 @@ main {
 	display: flex;
 	width: 100%;
 	height: 10%;
-	// justify-content: center;
 	align-items: center;
-	// background-color: antiquewhite;
 	font-family: fonts.$variable;
 	font-weight: 300;
 	padding-bottom: 10px;
@@ -73,9 +70,9 @@ main {
 }
 
 .cards {
-	max-height: 500px; /* Ustaw maksymalną wysokość kontenera listy */
-	overflow-y: auto; /* Włącz przewijanie w pionie, gdy zawartość przekroczy limit */
-	padding-right: 10px; /* Opcjonalne: Ustawienie odstępu na pasek przewijania */
+	max-height: 500px;
+	overflow-y: auto;
+	padding-right: 10px;
 }
 
 ul {
@@ -84,16 +81,10 @@ ul {
 	li {
 		display: flex;
 		flex-direction: column;
-		// justify-content: space-between;
-		// align-items: center;
-		// width: 100%;
-		// height: 50px;
-		// border-width: 90px;
 
 		.question-box {
 			display: flex;
 			padding: 25px 0 25px 0px;
-			// height: 100px;
 			justify-content: space-between;
 			align-items: center;
 			border-top: 1px solid rgba(95, 95, 95, 0.2);
@@ -106,21 +97,21 @@ ul {
 
 			span {
 				display: flex;
-				// width: 50px;
-				// height: 50px;
 				justify-self: center;
 				align-self: center;
 				padding-left: 20px;
+				transition: all 0.3s;
 
 				svg {
-					// align-content: center;
 					width: 25px;
 					height: 25px;
+					z-index: 1;
 				}
 			}
 		}
 
 		.answer-box {
+			display: none;
 			padding: 5px;
 			font-family: fonts.$italic;
 			font-style: italic;
@@ -138,9 +129,20 @@ ul {
 	}
 }
 
+.clicked {
+	color: colors.$Grayish-purple;
+}
+
 .question-box:hover {
+	span {
+		transform: scale(1.1);
+
+		svg path {
+			fill: colors.$Dark-purple;
+		}
+	}
+
 	P {
-		// transform: scale(1.1);
 		color: colors.$Grayish-purple;
 	}
 }
@@ -154,13 +156,12 @@ ul {
 		background: url(/assets/images/background-pattern-desktop.svg);
 		background-repeat: no-repeat;
 		background-size: cover;
-		// background-position: center;
 	}
 
 	.cards {
-		max-height: 600px; /* Ustaw maksymalną wysokość kontenera listy */
-		overflow-y: auto; /* Włącz przewijanie w pionie, gdy zawartość przekroczy limit */
-		padding-right: 10px; /* Opcjonalne: Ustawienie odstępu na pasek przewijania */
+		max-height: 600px;
+		overflow-y: auto;
+		padding-right: 10px;
 	}
 
 	.title {
