@@ -163,7 +163,7 @@ ul li .first {
     width: 600px;
   }
   .bg {
-    background: url(../assets/images/background-pattern-desktop.svg);
+    background: url(./assets/images/background-pattern-desktop.svg);
     background-repeat: no-repeat;
     background-size: cover;
   }
